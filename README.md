@@ -14,4 +14,5 @@ The version of the Api Riot for which the project is written is v4.
 <p align="center">
 
 <img src="https://github.com/Lerby-dev/lol-help-app/blob/main/app/src/main/assets/lol_abyss_gif_1.gif" width="200" />
+
 </p>
