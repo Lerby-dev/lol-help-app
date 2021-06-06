@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lol_Abyss</string>
+    <string name="action_settings">Settings</string>
+    <string name="hintEditText">Enter name</string>
+    <string name="rechercher">Search</string>
+    <string name="title_activity_history">HistoryActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_principal">Menu Principal</string>
+    <string name="statistic">Statistic</string>
+    <string name="contact">Contact</string>
+    <string name="apropos">A Propos</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_details_match">DetailsMatchActivity</string>
+    <string name="winners">Winners</string>
+    <string name="Losers">Losers</string>
+    <string name="title_activity_champions">ChampionsActivity</string>
+    <string name="champions">Champions</string>
+</resources>

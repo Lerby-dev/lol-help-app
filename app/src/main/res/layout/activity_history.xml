@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AccentColor">
+
+        <include layout="@layout/toolbar"></include>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/rv_match"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="280dp"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_drawer"
+        app:menu="@menu/menu_drawer"
+        android:background="@color/PrimaryColor"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:id="@+id/navigation_view"
+        android:layout_height="match_parent">
+
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

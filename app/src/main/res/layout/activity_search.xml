@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_search"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/graves_25" />
+
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:text="@string/rechercher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"/>
+
+    <EditText
+        android:id="@+id/et_player"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintEditText"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_recent"
+        android:layout_width="120dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+
+        <ProgressBar
+            android:id="@+id/pb_search"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+    android:layout_width="280dp"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/header_drawer"
+    app:menu="@menu/menu_drawer"
+    android:background="@color/PrimaryColor"
+    app:itemTextColor="@color/white"
+    app:itemIconTint="@color/white"
+    android:id="@+id/navigation_view"
+    android:layout_height="match_parent">
+
+
+
+</com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
